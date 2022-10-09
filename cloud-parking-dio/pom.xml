@@ -17,6 +17,8 @@
         <java.version>17</java.version>
         <spring-cloud.version>2021.0.4</spring-cloud.version>
         <testcontainers.version>1.17.4</testcontainers.version>
+        <modelmapper.version>2.3.5</modelmapper.version>
+        <springfox-swagger.version>2.9.2</springfox-swagger.version>
     </properties>
     <dependencies>
         <dependency>
@@ -34,6 +36,21 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.modelmapper</groupId>
+            <artifactId>modelmapper</artifactId>
+            <version>${modelmapper.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox-swagger.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox-swagger.version}</version>
         </dependency>
 
         <dependency>
